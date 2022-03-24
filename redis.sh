@@ -6,4 +6,4 @@
 
 #chmod 777 -R redis
 
-#docker run -it --name redis -p 6379:6379  -v /home/redis/conf/redis.conf:/usr/share/elasticsearch/config/elasticsearch.yml -v /home/redis/data:/usr/share/redis/data -d redis:latest
+#docker run -it --name redis -p 6379:6379  -v /home/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf -v /home/redis/data:/data -d redis:latest redis-server /usr/local/etc/redis/redis.conf
